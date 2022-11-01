@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+* body {
+  min-width: 200px;
+}
+* ul {
+  list-style: none;
+}
+* ul a {
+  text-decoration: none;
+}
+
+.bg-page {
+  background: url(../images/bgWave.svg) no-repeat left;
+  background-position-y: -100px;
+  background-color: #fcdfd7;
+  height: 100vh;
+}
+
+.header, .footer {
+  height: 70px;
+  backdrop-filter: blur(10px);
+  background-color: #b200008e;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header .container__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  width: 220px;
+}
+.header .container__logos .logo-header {
+  width: 80px;
+}
+.header .nav {
+  margin-left: auto;
+}
+.header .nav ul {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.header .nav ul li {
+  transition: all ease 0.25s;
+}
+.header .nav ul li:hover {
+  transform: translate3d(0, -3px, 0);
+}
+.header .nav ul li a {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: white;
+  text-align: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menu,
+.menu__hamburguer {
+  display: none;
+  z-index: -9999;
+  opacity: -100%;
+  transform: translate(-999999px, -99999px);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+.main .image-main {
+  max-width: 500px;
+  width: 42.5%;
+  min-width: 250px;
+  justify-self: none;
+  align-self: flex-start;
+  margin-bottom: 100px;
+}
+.main .login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4);
+  flex-direction: column;
+  height: calc(100vh - 170px);
+  min-height: 450px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  min-width: 550px;
+  max-width: 1000px;
+  margin: 15px 0;
+  border-radius: 3px;
+}
+.main .login-section .wrapper {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+}
+.main .login-section .wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main .login-section .wrapper form label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main .login-section .wrapper form input {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 25px;
+  font-size: 0.95em;
+}
+.main .login-section .wrapper form input:focus {
+  background: #f7f7f7;
+}
+.main .login-section .wrapper form input:hover, .main .login-section .wrapper form input:focus {
+  outline: none;
+  padding: 4px;
+  border: 1px solid #b20000;
+}
+.main .login-section .wrapper form .btn-enter {
+  align-self: flex-end;
+  padding: 5px 20px;
+  background: #c54d33;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 35px;
+  font-size: 0.85em;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main .login-section .wrapper form .btn-enter:hover {
+  background: #b64830;
+}
+.main .login-section .wrapper a {
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  color: #b20000;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+.main .login-section .wrapper .btn-help {
+  padding: 15px;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 3px;
+  background: #b20000;
+  margin-top: 30px;
+  font-size: 0.95em;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all ease 0.2s;
+}
+.main .login-section .wrapper .btn-help:hover {
+  background-color: #9c0505;
+}
+.main .container-trys {
+  text-align: center;
+}
+.main .container-trys p {
+  font-size: 1.115em;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  border-bottom: 1px solid #c54d33;
+}
+.main .container-trys span {
+  font-size: 1.35em;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.footer h2 {
+  font-size: 1.25em;
+}
+.footer span {
+  font-size: 0.85em;
+}
+
+@media (min-width: 1500px) {
+  .bg-page {
+    background-position-x: 100%;
+  }
+
+  .main .image-main {
+    max-width: 50%;
+  }
+  .main .login-section .wrapper {
+    width: 50%;
+  }
+}
+@media (max-width: 970px) {
+  [data-anime] {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  [data-anime=show] {
+    height: 0px;
+    transform: translate(-99999);
+  }
+
+  [data-anime=show].animation {
+    opacity: 1;
+    height: 250px;
+    transform: translate(0);
+  }
+
+  .menu,
+.menu__hamburguer {
+    z-index: 0;
+    opacity: 100%;
+    transform: translate(0);
+  }
+
+  .menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin: 25px;
+  }
+
+  .menu__hamburguer {
+    height: 20px;
+    width: 100%;
+    background: transparent;
+    display: block;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .menu__hamburguer::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .header {
+    height: auto;
+    flex-direction: column;
+  }
+  .header .container__logos {
+    justify-self: flex-end;
+  }
+  .header .nav {
+    margin: 0;
+  }
+  .header .nav .container__logos {
+    margin: 0;
+  }
+  .header .nav ul {
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .main {
+    overflow-x: hidden;
+    align-items: center;
+    min-height: 83.5vh;
+  }
+  .main .image-main {
+    margin: auto 0;
+  }
+  .main .login-section {
+    min-width: 450px;
+    height: 650px;
+  }
+  .main .login-section .wrapper {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

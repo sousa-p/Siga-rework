@@ -1,0 +1,52 @@
+@mixin initializer () {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        min-width: 200px;
+    }
+}
+
+@mixin ul_initializer () {
+    list-style: none;
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+@mixin centralizer () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mkPseudoElements ($elementContent, $elementDisplay, $elementWidth, $elementHeight, $elementBg) {
+    content: $elementContent;
+    display: $elementDisplay;
+    width: $elementWidth;
+    height: $elementHeight;
+    background: $elementBg;
+}
+
+@mixin mkLetterStyle ($fontSize, $fontWeight, $fontColor, $fontAlign, $fontHeight, $fontSpacing, $fontTransform) {
+    font-size: $fontSize;
+    font-weight: $fontHeight;
+    color: $fontColor;
+    text-align: $fontAlign;
+    line-height: $fontHeight;
+    letter-spacing: $fontSpacing;
+    text-transform: $fontTransform;
+}
+
+@mixin mkContainer ($containerWidth, $containerHeight, $containerBg) {
+    width: $containerWidth;
+    height: $containerHeight;
+    background: $containerBg;
+}
+
+@mixin glassMorphism ($glassBlur, $glassBg) {
+    backdrop-filter: blur($glassBlur);
+    background-color: $glassBg;
+}
